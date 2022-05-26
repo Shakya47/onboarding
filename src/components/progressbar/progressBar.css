@@ -1,0 +1,107 @@
+
+.progressbar-container {
+    text-align: center;
+    position: relative;
+    margin: 30px 45px 30px 45px;
+  }
+  
+  #progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+  }
+  
+  #progressbar li {   /*make li horizontal */
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+  }
+  
+  #progressbar #step1:before {
+      content: "1";
+  }
+  
+  #progressbar #step2:before {
+      content: "2"
+  }
+  
+  #progressbar #step3:before {
+      content: "3"
+  }
+  
+  #progressbar #step4:before {
+      content: "4"
+  }
+  
+  #progressbar li:before {  /*make li Circle */
+      width: 27px;
+      height: 27px;
+      line-height: 27px;
+      display: block;
+      font-size: 12px;
+      background: white;
+      color: black;
+      border: 1px solid lightgrey;
+      border-radius: 50%;
+      margin: 0 auto 10px auto;
+      padding: 2px;
+      z-index: 1;
+  }
+  
+  #progressbar li:after {   /*make progress line */
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: lightgray;
+      position: absolute;
+      left: 0;
+      top: 16px;
+      z-index: -1;
+  }
+  
+  #progressbar li.active:before,
+  #progressbar li.active:after {
+      background: #664de5;
+      color: white;
+  }
+
+  #progressbar li.active:before{
+    border: 1px solid #664de5;
+  }
+  
+  
+  .progress-bar {
+      background-color: #664de5
+  }
+  
+  #progressbar li.first:after
+   {
+      background: linear-gradient(to left, #664de5 50%, white 50%);
+      
+  }
+  
+  #progressbar li.first:before{
+    background: #664de5;
+    border: 1px solid #664de5;
+    color: white;
+  }
+  
+  #progressbar li.last:after
+   {
+      background: linear-gradient(to right, lightgray 50%, white 50%);
+  }
+  
+  #progressbar li.lastActive:after
+   {
+      background: linear-gradient(to right, #664de5 50%, white 50%);
+      
+  }
+  
+  #progressbar li.lastActive:before{
+    background: #664de5;
+    border: 1px solid #664de5;
+    color: white;
+  }

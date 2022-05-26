@@ -1,0 +1,35 @@
+.workspace-container{
+    transition: transform .35s ease-in-out;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 15px 8px 15px;
+}
+
+.form-container label{
+    display: inline;
+}
+
+.combo-label{
+    display: flex;
+}
+
+.combo-label .inputSpan{
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ebeff5;
+    background: #f8f9fc;
+    align-items: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: gray;
+    padding: 0 10px 0 10px;
+}
+
+.combo-label > input{
+    width: 186px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

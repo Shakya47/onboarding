@@ -1,0 +1,44 @@
+.planning-container{
+    transition: transform .35s ease-in-out;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin-bottom: 12px;
+    /* margin: 10px 60px 13px 65px; */
+}
+
+.options-buttons{
+    padding: 17px;
+    width: 115px;
+    padding-right: 19px;
+    text-align: left;
+    border: 0.5px solid #eaeef5;
+    border-radius: 6px;
+}
+.options-buttons .option-title{
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 10px;
+    
+}
+
+.options-buttons .option-desc{
+    color: gray;
+    font-size: 13px;
+}
+
+.options-buttons .icon{
+    font-size: 20px;
+    padding-bottom: 13px;
+}
+
+.options-buttons:hover {
+    border: 0.5px solid #664de5;
+}
+.options-buttons:hover .icon{
+    color: #664de5;
+}
+
