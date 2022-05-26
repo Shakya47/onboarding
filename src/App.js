@@ -3,7 +3,7 @@ import Logo from './components/logo/Logo';
 import ProgressBar from './components/progressbar/ProgressBar';
 import NavigationControl from './components/navigationcontrol/NavigationControl';
 import React, {useState} from 'react';
-import './app.css';
+import './index.css';
 
 function App() {
 
