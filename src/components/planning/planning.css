@@ -42,3 +42,10 @@
     color: #664de5;
 }
 
+.options-buttons:active {
+    border: 0.5px solid #664de5;
+}
+.options-buttons:active .icon{
+    color: #664de5;
+}
+

@@ -2,24 +2,28 @@ import Form from './components/form/Form';
 import Logo from './components/logo/Logo';
 import ProgressBar from './components/progressbar/ProgressBar';
 import NavigationControl from './components/navigationcontrol/NavigationControl';
-import React, {useState} from 'react';
+import React from 'react';
 import './index.css';
+import PageState from './context/page/PageState';
 
 function App() {
 
-  const [page, setPage] = useState(0);
-
   return (
-    <div className="App">
-      <Logo /> 
-      
-      <ProgressBar curStep = {page}/>
+    
+      <div className="App">
 
-      <Form curPage = {page}/>
+        <PageState>
+          <Logo /> 
+          
+          <ProgressBar/>
 
-      <NavigationControl page={page} onBtnClick = {setPage}/>
+          <Form/>
 
-    </div>
+          <NavigationControl/>
+        </PageState>
+
+      </div>
+    
   );
 }
 

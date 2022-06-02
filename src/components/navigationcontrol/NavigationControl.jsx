@@ -1,9 +1,10 @@
-import React, {useCallback} from 'react'
+import React, {useContext} from 'react'
 import './navigationControl.css'
+import PageContext from '../../context/page/PageContext';
 
-const NavigationControl = ({page, onBtnClick}) => {
+const NavigationControl = () => {
 
-  const incrementBtnClick = useCallback(() => {onBtnClick((currPage) => currPage + 1)}, [onBtnClick])
+  const { page, setPage } = useContext(PageContext);
 
 
   return (
@@ -11,7 +12,7 @@ const NavigationControl = ({page, onBtnClick}) => {
 
         <button 
         disabled={page === 4}
-        onClick={incrementBtnClick}
+        onClick={() => {setPage()}}
         >{(page >= 3 ? 'Launch Eden' : 'Create Workspace')}</button>
     </div>
   )
